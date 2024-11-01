@@ -1,5 +1,5 @@
 {
-  "name": "website_energetics",
+  "name": "breezer",
   "version": "1.0.0",
   "description": "My awesome project",
   "main": "index.js",
@@ -17,7 +17,7 @@
     "React",
     "eslint"
   ],
-  "author": "dmitrii",
+  "author": "mykhailo",
   "license": "ISC",
   "dependencies": {
     "prop-types": "^15.8.1",
