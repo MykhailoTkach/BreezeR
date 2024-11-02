@@ -57,7 +57,7 @@ export const LoginSignup = () => {
   }
 
   return (
-    <div className={style.loginsignup}>
+    <div data-testid="testlogin" className={style.loginsignup}>
       <div className={style.loginsignupContainer}>
         <h1>{state}</h1>
         <div className={style.loginsignupFields}>

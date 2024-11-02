@@ -6,7 +6,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif|svg|woff|woff2|eot|ttf|otf)$/i,
+        test: /\.(png|jpg|jpe?g|gif|svg|woff|woff2|eot|ttf|otf)$/i,
         use: [
           {
             loader: 'file-loader',

@@ -13,10 +13,10 @@ useEffect(()=>{
 },[])
 
   return (
-    <div className={style.popular}>
+    <div  className={style.popular}>
       <h1>POPULAR IN WOMEN</h1>
       <hr />
-      <div className={style.popularItem}>
+      <div data-testid="testproduct" className={style.popularItem}>
         {popularProducts.map((item, i) => {
           return (
             <Item
