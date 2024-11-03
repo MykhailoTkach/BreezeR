@@ -10,9 +10,12 @@ const basicConfig = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: path.resolve(__dirname, '../templates/index.html'),
+      template: path.resolve(__dirname, '../template/index.html'),
     }),
-    new Dotenv({ systemvars: true }),
+    new Dotenv({
+      path: '../backend/.env', // вкажіть шлях до вашого .env файлу
+      systemvars: true,
+    }),
   ],
   module: {
     rules: [
