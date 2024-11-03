@@ -1,5 +1,5 @@
 const path = require('node:path');
-
+const Dotenv = require('dotenv-webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const basicConfig = {
@@ -10,8 +10,9 @@ const basicConfig = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: path.resolve(__dirname, '../template/index.html'),
+      template: path.resolve(__dirname, '../templates/index.html'),
     }),
+    new Dotenv({ systemvars: true }),
   ],
   module: {
     rules: [
@@ -35,6 +36,11 @@ const basicConfig = {
       '@components': path.resolve(__dirname, '../src/components'),
       '@hooks': path.resolve(__dirname, '../src/hooks'),
       '@pages': path.resolve(__dirname, '../src/pages'),
+    },
+    fallback: {
+      path: false,
+      os: false,
+      crypto: false,
     },
   },
   devServer: {
