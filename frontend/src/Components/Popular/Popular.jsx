@@ -16,7 +16,7 @@ useEffect(()=>{
     <div  className={style.popular}>
       <h1>POPULAR IN WOMEN</h1>
       <hr />
-      <div data-testid="testproduct" className={style.popularItem}>
+      <div className={style.popularItem}>
         {popularProducts.map((item, i) => {
           return (
             <Item

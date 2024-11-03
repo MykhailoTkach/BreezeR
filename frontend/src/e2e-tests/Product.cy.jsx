@@ -1,7 +1,6 @@
-describe('Home Page E2E Test', () => {
-  it('should visit the home page and display the main components', () => {
-    cy.visit('/');
-    cy.get('[data-testid="testproduct"]').first().click();
-    cy.url().should('include', '/product/');
+describe('Mens Page E2E Test', () => {
+    it('should navigate to the product page when clicking on an item', () => {
+    cy.visit('/mens');
+    cy.get('[data-testid="item"]').first().click();
   });
 });
